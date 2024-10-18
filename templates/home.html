@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBU ERP</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>RBU ERP SYSTEM</h1>
+    
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Course</th>
+            <th>Semester</th>
+            <th>Subject Name</th>
+        </tr>
+        {% for stream in btech %}
+        <tr>
+            <td>{{ stream['id'] }}</td>
+            <td>{{ stream.course }}</td>
+            <td>{{ stream.semester }}</td>
+            <td>{{ stream.subject }}</td>
+            <td><a href="/courseplan">select</a></td>
+            
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

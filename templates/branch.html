@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBU ERP</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Instruction Plan</h1>
+    <a href="/add">Add New Lecture</a>
+    <a href="/">Home</a>
+
+    <table border="1">
+        <tr>
+            <th>Lect. No.</th>
+            <th>Topics to Cover</th>
+            <th>Date of Planning</th>
+            
+        </tr>
+        {% for lecture in letures %}
+        <tr>
+            <td>{{ lecture.lec_no }}</td>
+            <td>{{ lecture.topic }}</td>
+            <td>{{ lecture.date }}</td>
+            
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
