@@ -31,17 +31,19 @@
    git clone https://github.com/ummed3062/ERP-System.git
    cd ERP-System
 2. **Install required Python packages:**
+   ```bash
     pip install flask mysql-connector-python
 
-3. **Configure the MySQL database:**
+4. **Configure the MySQL database:**
 
    - Make sure MySQL is running on your local machine.
    - Create a database named erp_db in your MySQL instance.
    - Update the database connection details in the get_db_connection() function in app.py if needed.
    - Run the application:
+   - ```bash
       python app.py
 
-4. **Access the application:**
+5. **Access the application:**
    - Open a web browser and go to http://127.0.0.1:5000/
 
 **Project Structure**
